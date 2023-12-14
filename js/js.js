@@ -1,0 +1,18 @@
+console.log('login js');
+
+document.getElementById('btn-submit').addEventListener('click', function(){
+    console.log('submit button clicked');
+    const emailField = document.getElementById('user-email');
+    const email = emailField.value;
+    const passwordField = document.getElementById('user-password');
+    const password = passwordField.value;
+
+    console.log(email,password);
+
+    if(email=== 'sontan@bap.com' && password == '12345'){
+        window.location = 'bank.html'
+    }
+    else{
+        console.log('invalid user')
+    }
+})
